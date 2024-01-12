@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, ul,{
+
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+
+}
+.nav-link{
+    color: #fff;
+    position: relative;
+    padding: 0 !important ;
+}
+.nav-item{
+    padding: 0 15px;
+}
+.nav-link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    background-color: #008ed6;
+    height: 3px;
+    transition: .5s all ease-in-out;
+
+}
+.nav-link::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0%;
+    background-color: #008ed6;
+    height: 3px;
+    transition: .5s all ease-in-out;
+
+}
+
+.nav-link:hover{
+    color: #fff;
+}
+.nav-link:hover::before{
+    width: 40%;
+
+}
+.nav-link:hover::after{
+    width: 40%;
+
+}
+header h5{
+
+color: #008ed6;
+
+font-size: 13px;
+
+font-weight: 400;
+
+text-transform: uppercase;
+}
+header h1{
+
+color: #ffff;
+
+font-size: 45px;
+
+margin-top: 15px;
+}
+header p{
+
+color: #b7bac1;
+
+margin: 15px 0;
+}
+.btn-download{
+
+background: #2ba3dd;
+
+color: #ffff;
+
+border-radius: 3px;
+
+text-transform: uppercase;
+
+font-size: 14px;
+
+letter-spacing: .8px;
+margin-top: 30px;
+
+}
+.btn-download:hover{
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff; 
+}
+.phone{
+    position: absolute;
+    bottom: 0;
+}
+.height{
+    min-height: 80vh;
+    align-items: center;
+}
+/* header  */
+
+/* feature css  */
+
+.features_section{
+    padding: 50px 0;
+
+}
+.section_title {
+
+text-align: center;
+
+margin-bottom: 40px;
+}
+.section_title h3{
+
+text-transform: uppercase;
+
+font-size: 14px;
+
+color: #2ba3dd;
+}
+.section_title h1{
+
+font-size: 26px;
+
+margin: 10px 0;
+}
+.section_title span{
+
+display: block;
+
+width: 0px;
+
+color: #2ba3dd;
+
+height: 3px;
+
+margin: auto;
+transition: .5s all ease-in-out ;
+
+}
+.features_section:hover .section_title span{
+    width: 50px;
+}
+.icon_box{
+
+border:  1px solid #000;
+
+height: 60px;
+
+width: 60px;
+
+border-radius: 50%;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+margin: auto;
+}
+.features_section h2{
+
+text-align: center;
+
+font-size: 24px;
+
+margin: 15px 0;
+}
+.features_section p{
+
+text-align: center;
+}
+
+/* feature css  */
+
+/* section device  */
+.device_section{
+
+padding: 50px 0;
+}
+.device_section p{
+    
+}
+.device_section ul {
+    
+list-style: none;
+    
+margin-top: 20px;
+}
+.device_section ul li{
+    
+display: flex;
+}
+.device_section ul li .list_icon{
+    
+width: 30px;
+    
+margin-bottom: 5px;
+    
+margin-right: 3px;
+    
+text-align: center;
+}
+.device_section .section_title{
+    text-align: left;
+}
+.device_section:hover .section_title span{
+    width: 50px;
+}
+.img img{
+    width: 70%;
+}
+
+/* section device  */
+
+/* testimonial section  */
+.testimonial_section{
+    background-image: url(../images/pexels-josh-sorenson-1714205.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+    position: relative;
+    z-index: 0;
+}
+.testimonial_section::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+    filter: blur(.5);
+
+}
+.heading{
+
+text-align: center;
+
+color: #fff;
+
+margin-bottom: 50px;
+}
+.heading h1{
+
+}
+.heading p{
+
+}
+.testimonial_section p{
+
+color: #fff;
+}
+.client_info{
+
+display: flex;
+
+margin-top: 20px;
+
+align-items: center;
+}
+.client_img{
+
+width: 50px;
+
+height: 50px;
+
+overflow: hidden;
+
+border-radius: 50%;
+}
+.client_details{
+
+color: #fff;
+
+margin-left: 30px;
+}
+.client_details h5{
+
+font-size: 16px;
+}
+.client_details h4{
+
+font-size: 16px;
+}
+/* testimonial section  */
+
+.ad_section{
+    background-color: black;
+    padding: 50px 0;
+
+}
+.ad_section p{
+    
+color: #fff;
+    
+font-size: 26px;
+}
+.ad_section p strong{
+    
+}
+.btn-download{
+
+padding: 0;
+
+border: 1px solid #5fc3ff;
+
+border-radius: 3px;
+
+padding: 10px 30px;
+
+color: #fff;
+
+background: #5fc3ff;
+}
+.btn-download:hover{
+    color: #fff;
+    background-color: transparent;
+    border-color: #5fc3ff
+}
+.Pricing_section{
+
+padding: 70px 0;
+}
+.Pricing_section .heading{
+    color: black;
+    }
+    .price_table{
+
+border: 1px solid #e0e0e0;
+
+text-align: center;
+}
+.price_table:hover .price{
+    background-color: #008ed6;
+    color: #fff;
+    transition: .5s all ease-in-out
+}
+.price_table:hover .price p{
+    color: #fff;
+}
+
+.price_table h2{
+        
+padding: 20px;
+        
+border-bottom: 1px solid #b8b8b8;
+        
+text-transform: uppercase;
+    }
+.price_table:hover h2{
+    color: #008ed6;
+}
+.price{
+
+padding: 40px 0;
+
+border-bottom: 1px solid #b8b8b8;
+
+}
+    .price h1{
+        
+font-size: 60px;
+    }
+    .price h1 sup{
+        
+font-size: 40px;
+    }
+    .price p{
+        color: #b8b8b8;
+    }
+    .desc{
+
+padding: 30px;
+
+}
+    .desc p{
+        color: #b8b8b8;
+
+    }
+    .btn-order{
+        
+padding: 0;
+        
+border: 1px solid #b8b8b8;
+        
+border-radius: 3px;
+        
+padding: 10px 25px;
+        
+margin-bottom: 35px;
+        
+text-transform: uppercase;
+color: #008ed6;
+font-size: 15px;
+font-weight: 600;
+ }
+ .price_table:hover .btn-order{
+    background-color: #008ed6;
+    color: #fff;
+    border-color: #008ed6;
+ }
+ .Contect_section{
+
+background: #ededed;
+
+padding: 70px 0;
+position: relative;
+
+}
+.Contect_section .heading{
+    color:#000;
+}
+ .Contect_section i {
+
+color: #008ed6;
+
+}
+ .Contect_section p{
+    
+ }
+ .Contect_section form{
+
+background: #000;
+
+padding: 50px;
+left: 50%;
+
+border-radius: 5px;
+position: absolute;
+padding-bottom: 300px;
+
+;
+
+}
+ .Contect_section form input{
+
+background: transparent;
+
+border-color: #ededed;
+
+border-radius: 3px;
+
+}
+ .Contect_section form textarea{
+
+background: transparent;
+
+border-color: #ededed;
+
+border-radius: 3px;
+
+}
+ .Contect_section form button{
+
+background: #5fc3ff;
+
+border: none;
+
+color: #fff;
+
+padding: 10px 50px;
+
+border-radius: 3px;
+
+display: block;
+
+margin-left: auto;
+
+}
